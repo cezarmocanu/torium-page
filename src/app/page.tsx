@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="sm:grid bg-[#0A142F]">
-      <div className="relative min-h-screen items-stretch">
-        <div className=" m-8 flex-col h-full bg-red-600 grid-cols-2 ">
+      <div className="relative min-h-screen items-stretch pb-16">
+        <div className=" m-8 flex-col h-full max-h-fit bg-red-600 grid-cols-2 pb-16 px-2">
           <div className="grid h-3/5 grid-cols-1 sm:grid-cols-2">
           <div className=" m-6 min-h-[100px] flex-gap space-y-6 bg-black "/>
           <div className=" m-6 min-h-[100px] flex-gap bg-yellow-300 "/>
