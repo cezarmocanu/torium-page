@@ -1,5 +1,17 @@
 import { Section1 } from "@/features/home/components/Section1";
+import { Card } from "@/features/home/components/Card"
 import Image from "next/image";
+
+
+  const data = [
+    { title: '20+ Project', image: '', content: 'Ceva cevatastic' ,},
+    { title: '425+', image: '', content: 'Ceva cevatastic' ,},
+    { title: '316', image: '', content: 'Ceva cevatastic' ,},
+    { title: 'Web Design', image: '', content: 'Ceva cevatastic' ,},
+    { title: 'E-commerce', image: '', content: 'Ceva cevatastic' ,},
+    { title: 'Web Hosting', image: '', content: 'Offerign reliable hosting services and ongoing support to keep your website running smoothly.' ,},
+  ]
+
 
 export default function Home() {
   return (
@@ -7,7 +19,17 @@ export default function Home() {
       <div className="flex flex-col gap-8 min-h-screen p-8">
         <div className="flex flex-1 gap-8 text-white">
           <Section1 />
-          <div className="flex-1 bg-yellow-300" />
+          <div className="flex-1 ">
+            <div className="gap-8 grid grid-cols-2">
+            {data.map(item =>(
+                <Card
+                  image = {item.image}
+                  title = {item.title}
+                  content = {item.content}
+                  />
+              ))}
+            </div>
+          </div>
         </div>
         <div className="flex-1 bg-green-600" />
       </div>
