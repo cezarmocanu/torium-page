@@ -10,8 +10,7 @@ import Image from "next/image";
     { title: 'Web Design', image: '', key: 'card-4', content: 'Ceva cevatastic' ,},
     { title: 'E-commerce', image: '', key: 'card-5', content: 'Ceva cevatastic' ,},
     { title: 'Web Hosting', image: '', key: 'card-6', content: 'Offering reliable hosting services and ongoing support to keep your website running smoothly.' ,},
-  ]
-
+  ];
 
 export default function Home() {
   return (
@@ -32,7 +31,21 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex-1 bg-green-600"></div>
+        <div className="flex flex-1">
+          <div className="rounded-l-md bg-blue-400 h-[300px] w-[500px]">
+              <img src=''></img>
+              <p className="flex flex-col justify-end text-center h-full p-4">Financial Planning tool</p>
+          </div>
+          <div className="bg-blue-400 h-[300px] w-[500px]" >
+              <p className="flex flex-col justify-end text-center h-full p-4">Responsive E-commerce Platform</p>
+          </div>
+          <div className="bg-blue-400 h-[300px] w-[500px]">
+              <p className="flex flex-col justify-end text-center h-full p-4">Blockchain Application Interface</p>
+          </div>
+          <div className="rounded-r-md bg-blue-400 h-[300px] w-[500px]">
+              <p className="flex flex-col justify-end text-center h-full p-4">Educationa Web Portal</p>
+          </div>
+        </div>
       </div>
       <div className="relative min-h-[120vh]">
         <Image
