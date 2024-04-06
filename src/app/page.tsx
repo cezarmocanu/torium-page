@@ -9,7 +9,7 @@ import Image from "next/image";
     { title: '316', image: '', content: 'Ceva cevatastic' ,},
     { title: 'Web Design', image: '', content: 'Ceva cevatastic' ,},
     { title: 'E-commerce', image: '', content: 'Ceva cevatastic' ,},
-    { title: 'Web Hosting', image: '', content: 'Offerign reliable hosting services and ongoing support to keep your website running smoothly.' ,},
+    { title: 'Web Hosting', image: '', content: 'Offering reliable hosting services and ongoing support to keep your website running smoothly.' ,},
   ]
 
 
