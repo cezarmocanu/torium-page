@@ -21,8 +21,9 @@ export default function Home() {
           <Section1 />
           <div className="flex-1 ">
             <div className="gap-8 grid grid-cols-2">
-            {data.map(item =>(
+            {data.map((item, index) =>(
                 <Card
+                  key={index}
                   image = {item.image}
                   title = {item.title}
                   content = {item.content}
