@@ -4,12 +4,12 @@ import Image from "next/image";
 
 
   const data = [
-    { title: '20+ Project', image: '', content: 'Ceva cevatastic' ,},
-    { title: '425+', image: '', content: 'Ceva cevatastic' ,},
-    { title: '316', image: '', content: 'Ceva cevatastic' ,},
-    { title: 'Web Design', image: '', content: 'Ceva cevatastic' ,},
-    { title: 'E-commerce', image: '', content: 'Ceva cevatastic' ,},
-    { title: 'Web Hosting', image: '', content: 'Offering reliable hosting services and ongoing support to keep your website running smoothly.' ,},
+    { title: '20+ Project', image: '', key: 'card-1' , content: 'Ceva cevatastic'},
+    { title: '425+', image: '' , key: 'card-2',  content: 'Ceva cevatastic' ,},
+    { title: '316', image: '' , key: 'card-3', content: 'Ceva cevatastic' ,},
+    { title: 'Web Design', image: '', key: 'card-4', content: 'Ceva cevatastic' ,},
+    { title: 'E-commerce', image: '', key: 'card-5', content: 'Ceva cevatastic' ,},
+    { title: 'Web Hosting', image: '', key: 'card-6', content: 'Offering reliable hosting services and ongoing support to keep your website running smoothly.' ,},
   ]
 
 
@@ -21,18 +21,18 @@ export default function Home() {
           <Section1 />
           <div className="flex-1 ">
             <div className="gap-8 grid grid-cols-2">
-            {data.map((item, index) =>(
+            {data.map((item) =>(
                 <Card
-                  key={index}
-                  image = {item.image}
-                  title = {item.title}
-                  content = {item.content}
+                  key={item.key}
+                  image={item.image}
+                  title={item.title}
+                  content={item.content}
                   />
               ))}
             </div>
           </div>
         </div>
-        <div className="flex-1 bg-green-600" />
+        <div className="flex-1 bg-green-600"></div>
       </div>
       <div className="relative min-h-[120vh]">
         <Image
