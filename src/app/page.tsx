@@ -10,11 +10,12 @@ export default function Home() {
           <div className="grid h-3/5 grid-cols-1 sm:grid-cols-2 gap-12 pb-12">
             <div className=" min-h-[100px] flex-gap space-y-6 bg-black"/>
             <div className=" min-h-[100px] flex-gap bg-yellow-300 grid-cols-2">
-              <div className="grid-cols-2 flex text-left text-xl">
+              <div className="grid-cols-2 flex text-left">
               <CardComponent 
               title=""
               content=""
-              image=""/>
+              image=""
+              className=""/>
               </div>
             </div>
           </div>
