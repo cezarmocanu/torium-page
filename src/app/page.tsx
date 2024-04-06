@@ -33,7 +33,6 @@ export default function Home() {
         </div>
         <div className="flex flex-1">
           <div className="rounded-l-md bg-blue-400 h-[300px] w-[500px]">
-              <img src=''></img>
               <p className="flex flex-col justify-end text-center h-full p-4">Financial Planning tool</p>
           </div>
           <div className="bg-blue-400 h-[300px] w-[500px]" >
