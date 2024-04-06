@@ -7,13 +7,12 @@ interface cardsData {
   className: string;
 }
 
-const Card: FC<cardsData> = ({title, image, content, className}) => {
+const Card: FC<cardsData> = ({title, image, content,}) => {
   return(
     <div>
     <img src={image}/>
     <h1>{title}</h1>
     <p>{content}</p>
-    {className}
   </div>
   );
 }
